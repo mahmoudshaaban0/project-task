@@ -1,0 +1,94 @@
+name: app_template
+description: "A template for Flutter apps."
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.12.0
+  flutter: ">=3.44.0"
+
+dependencies:
+  cupertino_icons: ^1.0.9
+  dio: ^5.11.0
+  dotted_border: ^3.1.0
+  equatable: ^2.0.7
+  flutter:
+    sdk: flutter
+  flutter_bloc: ^9.1.1
+  flutter_localizations:
+    sdk: flutter
+  flutter_screenutil: ^5.9.3
+  fluttertoast: ^10.0.0
+  get_it: ^9.2.1
+  go_router: ^17.3.0
+  internet_connection_checker: ^3.0.1
+  intl: 0.20.2
+  json_annotation: ^4.12.0
+  json_serializable: ^6.14.1
+  local_auth: ^3.0.2
+  logger: ^2.7.0
+  lottie: ^3.5.1
+  persistent_bottom_nav_bar_v2: ^6.3.2
+  pinput: ^6.0.2
+  pretty_dio_logger: ^1.4.0
+  shared_preferences: ^2.5.5
+  shimmer: ^3.0.0
+  vector_graphics: ^1.2.3
+
+dev_dependencies:
+  build_runner: ^2.11.1
+  flutter_lints: ^6.0.0
+  flutter_test:
+    sdk: flutter
+  rename: ^3.1.0
+  vector_graphics_compiler: ^1.3.0
+  very_good_analysis: ^10.3.0
+
+
+flutter:
+  uses-material-design: true
+  generate: true
+
+  assets:
+    - assets/mock/
+    - path: assets/vectors/
+      transformers:
+        - package: vector_graphics_compiler
+    - assets/rasters/
+    - assets/lotties/
+
+  # Add GraphikArabic fonts when you have the .ttf files in assets/fonts/
+  # fonts:
+  #   - family: GraphikArabic
+  #     fonts:
+  #       - asset: assets/fonts/GraphikArabic-Thin.ttf
+  #         weight: 100
+  #       - asset: assets/fonts/GraphikArabic-Light.ttf
+  #         weight: 300
+  #       - asset: assets/fonts/GraphikArabic-Regular.ttf
+  #         weight: 400
+  #       - asset: assets/fonts/GraphikArabic-Medium.ttf
+  #         weight: 500
+  #       - asset: assets/fonts/GraphikArabic-Semibold.ttf
+  #         weight: 600
+  #       - asset: assets/fonts/GraphikArabic-Bold.ttf
+  #         weight: 700
+  #       - asset: assets/fonts/GraphikArabic-Black.ttf
+  #         weight: 800
+  #       - asset: assets/fonts/GraphikArabic-Super.ttf
+  #         weight: 900
+
+flutter_assets:
+  assets_path:
+    - assets/vectors/
+    - assets/rasters/
+    - assets/fonts/
+    - assets/lotties/
+  output_path: lib/common/constants
+  filename: app_assets.dart
+  field_prefix: null
+  ignore_comments: true
+  ignore_for_file: false
+flutter_intl:
+  enabled: true

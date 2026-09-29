@@ -1,0 +1,22 @@
+{
+    "requests": [
+        {
+            "recipientName": "Ahmed Khalid",
+            "amountInFils": 120000,
+            "currency": "AED",
+            "note": "Design retainer"
+        },
+        {
+            "recipientName": "Sara Mohamed",
+            "amountInFils": 34000,
+            "currency": "AED",
+            "note": "Team lunch"
+        },
+        {
+            "recipientName": "Leo Davis",
+            "amountInFils": 90000,
+            "currency": "AED",
+            "note": "Invoice review"
+        }
+    ]
+}

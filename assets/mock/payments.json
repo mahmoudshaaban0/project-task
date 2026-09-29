@@ -1,0 +1,59 @@
+{
+    "payments": [
+        {
+            "id": "seed-1",
+            "recipientName": "Ahmed K.",
+            "amountInFils": 120000,
+            "currency": "AED",
+            "status": "approved",
+            "requestedAt": "2026-09-10T09:25:00",
+            "decidedAt": "2026-09-10T09:30:00",
+            "reference": "PAY-88213",
+            "note": "Design retainer"
+        },
+        {
+            "id": "seed-2",
+            "recipientName": "Sara M.",
+            "amountInFils": 34000,
+            "currency": "AED",
+            "status": "approved",
+            "requestedAt": "2026-09-08T12:10:00",
+            "decidedAt": "2026-09-08T12:15:00",
+            "reference": "PAY-88197",
+            "note": "Team lunch"
+        },
+        {
+            "id": "seed-3",
+            "recipientName": "Leo D.",
+            "amountInFils": 90000,
+            "currency": "AED",
+            "status": "rejected",
+            "requestedAt": "2026-09-05T15:40:00",
+            "decidedAt": "2026-09-05T15:45:00",
+            "reference": "PAY-88154",
+            "note": "Duplicate invoice"
+        },
+        {
+            "id": "seed-4",
+            "recipientName": "Omar H.",
+            "amountInFils": 275000,
+            "currency": "AED",
+            "status": "approved",
+            "requestedAt": "2026-08-28T10:55:00",
+            "decidedAt": "2026-08-28T11:00:00",
+            "reference": "PAY-87902",
+            "note": "Office rent share"
+        },
+        {
+            "id": "seed-5",
+            "recipientName": "Mona S.",
+            "amountInFils": 15000,
+            "currency": "AED",
+            "status": "rejected",
+            "requestedAt": "2026-08-19T16:15:00",
+            "decidedAt": "2026-08-19T16:20:00",
+            "reference": "PAY-87811",
+            "note": null
+        }
+    ]
+}

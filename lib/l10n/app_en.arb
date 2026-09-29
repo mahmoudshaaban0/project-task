@@ -1,0 +1,44 @@
+{
+    "@@locale": "en",
+    "home": "Home",
+    "payments": "Payments",
+    "thisMonth": "This month",
+    "total": "Total",
+    "paymentsCount": "Payments",
+    "recent": "Recent",
+    "seeAll": "See all",
+    "statusApproved": "Approved",
+    "statusRejected": "Rejected",
+    "noRecentPayments": "No payments yet. Requests you approve or reject will appear here.",
+    "paymentDetails": "Payment details",
+    "paymentNotAvailable": "This payment isn't available. It may still be waiting for your decision.",
+    "paymentTileSemantics": "{name}, {amount}, {status}",
+    "@paymentTileSemantics": {
+        "placeholders": {
+            "name": {
+                "type": "String"
+            },
+            "amount": {
+                "type": "String"
+            },
+            "status": {
+                "type": "String"
+            }
+        }
+    },
+    "approvePayment": "Approve this payment?",
+    "recipient": "Recipient",
+    "amount": "Amount",
+    "reference": "Reference",
+    "reviewBeforeApproval": "Review the recipient and amount before approving.",
+    "authenticateToReveal": "Authenticate to reveal the recipient and full amount.",
+    "approvalFailed": "Unable to complete this step. Please try again or reject the request.",
+    "approve": "Approve",
+    "reject": "Reject",
+    "revealDetails": "Authenticate to reveal",
+    "newPaymentRequest": "New payment request · drag to move",
+    "requestFailed": "Could not create a request. Please try again.",
+    "date": "Date",
+    "note": "Note",
+    "noNote": "No note provided"
+}
