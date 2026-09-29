@@ -30,3 +30,28 @@ The app uses a feature-based structure with presentation and data layers. Home a
 | Theme scopes / `AppTheme` | Manage the selected theme and supply shared colors, typography, and component styles. |
 
 Authentication reveals request details; approving the payment is a separate user action. Payment changes stay in memory for the current session and do not modify the JSON assets.
+
+## Design system
+
+The app uses a custom design system inspired by Kanan Yusubov's [Design System from scratch in Flutter](https://medium.com/flutter-community/design-system-from-scratch-in-flutter-bc2aebb8bb02). Shared colors, typography, spacing, and component themes keep the UI consistent across screens and light/dark modes. Theme extensions expose styles through helpers such as `context.colors` and `context.typography`.
+
+Widgets follow an Atomic Design-inspired structure:
+
+| Level | Purpose | Examples |
+| --- | --- | --- |
+| Atoms | Small reusable visual elements. | `AppCard`, `SectionLabel`, `MoneyText`, `StatusBadge` |
+| Molecules | Combine elements into a focused component. | `PaymentTile`, `StatBlock` |
+| Organisms | Compose larger UI sections. | `MonthlySummaryCard`, `RecentPaymentsSection` |
+| Screens | Assemble sections and connect user actions to state and navigation. | `HomeScreen`, `PaymentsScreen`, `PaymentDetailsScreen` |
+
+This structure keeps styling reusable and lets screens focus on composition.
+
+## Payment references
+
+Background reading for the payment domain:
+
+- [Payment Service Provider (PSP)](https://en.wikipedia.org/wiki/Payment_service_provider)
+- [Payment Card Industry Data Security Standard (PCI DSS)](https://en.wikipedia.org/wiki/Payment_Card_Industry_Data_Security_Standard)
+- [Stripe: Payment tokenisation](https://stripe.com/en-es/resources/more/payment-tokenization-101)
+
+The assignment uses mock payments. It does not integrate a PSP or implement payment tokenisation, and it makes no PCI DSS compliance claim. UI masking hides displayed values; it is not tokenisation.
