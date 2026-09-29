@@ -1,5 +1,6 @@
 import 'package:app_template/common/authentication/device_authenticator.dart';
 import 'package:app_template/features/payments/presentation/cubit/approval_cubit.dart';
+import 'package:app_template/features/payments/presentation/cubit/approval_state.dart';
 import 'package:flutter_test/flutter_test.dart';
 
 void main() {

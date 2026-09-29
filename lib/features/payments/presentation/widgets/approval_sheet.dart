@@ -5,6 +5,7 @@ import 'package:app_template/common/formatters/money_formatter.dart';
 import 'package:app_template/common/widgets/atoms/bottom_sheet_wrapper.dart';
 import 'package:app_template/features/payments/data/models/payment_response_model.dart';
 import 'package:app_template/features/payments/presentation/cubit/approval_cubit.dart';
+import 'package:app_template/features/payments/presentation/cubit/approval_state.dart';
 import 'package:app_template/theme/theme_ext.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';

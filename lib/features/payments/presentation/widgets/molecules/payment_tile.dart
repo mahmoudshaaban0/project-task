@@ -45,39 +45,56 @@ class PaymentTile extends StatelessWidget {
         ),
         child: Row(
           children: [
+            DecoratedBox(
+              decoration: BoxDecoration(
+                color: context.colors.primaryContainer,
+                borderRadius: BorderRadius.circular(14),
+              ),
+              child: SizedBox.square(
+                dimension: 44,
+                child: Icon(
+                  Icons.person_outline_rounded,
+                  color: context.colors.onPrimaryContainer,
+                ),
+              ),
+            ),
+            const SizedBox(width: AppSpacing.xl),
             Expanded(
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  Row(
-                    children: [
-                      Flexible(
-                        child: Text(
-                          payment.recipientName,
-                          style: context.typography.semiBold16.copyWith(
-                            color: context.colors.textPrimary,
-                          ),
-                          maxLines: 1,
-                          overflow: TextOverflow.ellipsis,
-                        ),
-                      ),
-                      const SizedBox(width: AppSpacing.md),
-                      StatusBadge(approved: payment.isApproved),
-                    ],
-                  ),
-                  const SizedBox(height: AppSpacing.xs),
-                  MoneyText(
-                    amount,
-                    style: context.typography.regular14.copyWith(
-                      color: context.colors.textSecondary,
+                  Text(
+                    payment.recipientName,
+                    style: context.typography.semiBold16.copyWith(
+                      color: context.colors.textPrimary,
                     ),
+                    maxLines: 1,
+                    overflow: TextOverflow.ellipsis,
                   ),
+                  const SizedBox(height: AppSpacing.md),
+                  StatusBadge(approved: payment.isApproved),
                 ],
               ),
             ),
-            const SizedBox(width: AppSpacing.md),
-            // chevron_right mirrors automatically in RTL.
-            Icon(Icons.chevron_right, color: context.colors.textTertiary),
+            const SizedBox(width: AppSpacing.xl),
+            Column(
+              crossAxisAlignment: CrossAxisAlignment.end,
+              children: [
+                MoneyText(
+                  amount,
+                  style: context.typography.semiBold16.copyWith(
+                    color: context.colors.textPrimary,
+                  ),
+                ),
+                const SizedBox(height: AppSpacing.md),
+                // chevron_right mirrors automatically in RTL.
+                Icon(
+                  Icons.chevron_right_rounded,
+                  size: 20,
+                  color: context.colors.textTertiary,
+                ),
+              ],
+            ),
           ],
         ),
       ),

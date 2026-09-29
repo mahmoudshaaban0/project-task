@@ -38,7 +38,10 @@ class HomeScreen extends StatelessWidget {
 
         return BaseScaffold(
           appBar: AppBar(
-            title: Text(context.localizations.home),
+            title: Text(
+              context.localizations.home,
+              style: context.typography.semiBold22,
+            ),
             actions: [
               IconButton(
                 onPressed: () {
@@ -60,14 +63,14 @@ class HomeScreen extends StatelessWidget {
           ),
           body: ListView(
             padding: const EdgeInsetsDirectional.fromSTEB(
-              AppSpacing.xxl,
-              AppSpacing.xxl,
-              AppSpacing.xxl,
+              AppSpacing.xxxl,
+              AppSpacing.xxxl,
+              AppSpacing.xxxl,
               96,
             ),
             children: [
               MonthlySummaryCard(total: total, count: count),
-              const SizedBox(height: AppSpacing.xxxxl),
+              const SizedBox(height: 32),
               RecentPaymentsSection(
                 payments: state.decidedPayments,
                 onPaymentTap: (payment) {
