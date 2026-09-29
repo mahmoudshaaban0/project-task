@@ -52,17 +52,32 @@ env/*
 *.env
 !.env.example
 
-# AI assistant files and notes
-CLAUDE.md
-CLAUDE.local.md
-docs/architecture.md
-page.html
+# AI assistants and generated notes
+CLAUDE*.md
 .claude/
+.anthropic/
+claude_desktop_config.json
+
 AGENTS.md
-GEMINI.md
+CODEX*.md
+.codex/
+GEMINI*.md
 .gemini/
 .cursor/
 .cursorrules
+.windsurf/
 .windsurfrules
 .github/copilot-instructions.md
 .aider*
+
+# Local AI planning and documentation
+AI*.md
+*_AI.md
+.ai/
+.ai-docs/
+ai-docs/
+ai_docs/
+docs/ai/
+docs/ai-notes/
+docs/architecture.md
+page.html
