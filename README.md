@@ -2,7 +2,28 @@
 
 A Flutter payment review app with a monthly summary, payment history, and device authentication before revealing request details.
 
-## Demo and APK
+## Emulator authentication setup
+
+Local authentication requires a device credential or enrolled biometric. Configure it before installing and testing the app.
+
+### Android Emulator
+
+1. Open **Settings → Security & privacy → Device unlock → Screen lock**.
+2. Configure a PIN or pattern.
+3. Open **Fingerprint & face unlock** and start enrolling a fingerprint.
+4. While Android waits for a fingerprint, open the emulator's **⋮ Extended controls → Fingerprint**.
+5. Select a fingerprint and press **Touch Sensor**. Repeat until enrollment finishes.
+6. When the app displays the authentication prompt, press **Touch Sensor** again or enter the configured PIN or pattern.
+
+### iOS Simulator
+
+1. Start an iPhone simulator that supports Face ID.
+2. From the Simulator menu, select **Features → Face ID → Enrolled**.
+3. Run the app and open an authentication prompt.
+4. Select **Features → Face ID → Matching Face** to authenticate successfully.
+5. Select **Features → Face ID → Non-matching Face** to test a failed attempt.
+
+## Installation and demo
 
 - [Watch the app demo](assets/videos/screen_record.mov)
 - [Download the Android release APK](assets/apk/payments-app-release.apk)
