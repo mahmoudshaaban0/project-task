@@ -2,6 +2,11 @@
 
 A Flutter payment review app with a monthly summary, payment history, and device authentication before revealing request details.
 
+## Demo and APK
+
+- [Watch the app demo](assets/videos/screen_record.mov)
+- [Download the Android release APK](assets/apk/payments-app-release.apk)
+
 ## Architecture
 
 The app uses a feature-based structure with presentation and data layers. Home and Payments share payment state, while each approval sheet has its own authentication state.
